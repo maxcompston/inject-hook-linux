@@ -100,11 +100,13 @@ Next, set up the host to cross-compile arm64 creating a toolchain-aarch64-linux-
 #- this one is important
 
 SET(CMAKE_SYSTEM_NAME Linux)
+
 SET(CMAKE_SYSTEM_PROCESSOR arm64)
 
 #- specify the cross compiler
 
 SET(CMAKE_C_COMPILER   /usr/bin/aarch64-linux-gnu-gcc)
+
 SET(CMAKE_CXX_COMPILER /usr/bin/aarch64-linux-gnu-g++)
 
 #- where is the target environment
@@ -118,6 +120,7 @@ SET(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
 #- for libraries and headers in the target directories
 
 SET(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+
 SET(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 
 To build the cross-compiled arm64 program navigate to the build directory and run cmake as follows:
