@@ -10,7 +10,7 @@ Library injection and function hooking with support for:
 
 ## License
 
-Please see the [LICENSE](LICENSE) file for the exact details.
+Please see the (LICENSE) file for the exact details.
 
 In summary:
 
